@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5pyc5lpynflb"]
+
+[ext_resource type="Script" path="res://Scenes/MainScenes/counterscript.gd" id="1_cw63j"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i5fkp"]
+
+[node name="Control" type="Control"]
+material = SubResource("CanvasItemMaterial_i5fkp")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 145.0
+offset_top = 350.0
+offset_right = 295.0
+offset_bottom = 425.0
+text = "Test Button"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 145.0
+offset_top = 250.0
+offset_right = 295.0
+offset_bottom = 295.0
+theme_override_font_sizes/font_size = 30
+text = "Count:"
+vertical_alignment = 1
+script = ExtResource("1_cw63j")
+
+[connection signal="pressed" from="Button" to="Label" method="_on_button_pressed"]
