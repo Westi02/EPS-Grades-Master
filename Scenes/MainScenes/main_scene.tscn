@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5pyc5lpynflb"]
+[gd_scene load_steps=4 format=3 uid="uid://b5pyc5lpynflb"]
 
-[ext_resource type="Script" path="res://Scenes/MainScenes/counterscript.gd" id="1_cw63j"]
+[ext_resource type="Texture2D" uid="uid://wmacey8ic780" path="res://Images/icon.png" id="1_61iyo"]
+[ext_resource type="Theme" uid="uid://bq3j14yq6jae4" path="res://Themes/main_theme.tres" id="2_gjdmj"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i5fkp"]
 
@@ -13,23 +14,50 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 250.0
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 80.0
+offset_top = -25.0
+offset_right = 400.0
+offset_bottom = 275.0
+texture = ExtResource("1_61iyo")
+expand_mode = 2
+
 [node name="Button" type="Button" parent="."]
-layout_mode = 2
+layout_mode = 0
 offset_left = 145.0
-offset_top = 350.0
-offset_right = 295.0
-offset_bottom = 425.0
-text = "Test Button"
+offset_top = 306.0
+offset_right = 340.0
+offset_bottom = 356.0
+theme = ExtResource("2_gjdmj")
+text = "Bewertung"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 2
+[node name="Button2" type="Button" parent="."]
 offset_left = 145.0
-offset_top = 250.0
-offset_right = 295.0
-offset_bottom = 295.0
-theme_override_font_sizes/font_size = 30
-text = "Count:"
-vertical_alignment = 1
-script = ExtResource("1_cw63j")
+offset_top = 381.0
+offset_right = 340.0
+offset_bottom = 431.0
+theme = ExtResource("2_gjdmj")
+text = "Bewertungsmatrizen"
 
-[connection signal="pressed" from="Button" to="Label" method="_on_button_pressed"]
+[node name="Button3" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 456.0
+offset_right = 340.0
+offset_bottom = 506.0
+theme = ExtResource("2_gjdmj")
+text = "Schüler"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 531.0
+offset_right = 340.0
+offset_bottom = 581.0
+theme = ExtResource("2_gjdmj")
+text = "Settings"

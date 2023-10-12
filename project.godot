@@ -13,7 +13,7 @@ config_version=5
 config/name="EPS-Grade-Master"
 run/main_scene="res://Scenes/MainScenes/main_scene.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-boot_splash/bg_color=Color(0.717647, 0.996078, 1, 1)
+boot_splash/bg_color=Color(0.129412, 0.129412, 0.129412, 1)
 boot_splash/image="res://Images/icon.png"
 config/icon="res://icon.svg"
 
@@ -31,4 +31,4 @@ import/blender/enabled=false
 [rendering]
 
 renderer/rendering_method="mobile"
-environment/defaults/default_clear_color=Color(0.717647, 0.996078, 1, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
