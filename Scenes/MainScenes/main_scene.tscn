@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5pyc5lpynflb"]
+
+[ext_resource type="Texture2D" uid="uid://wmacey8ic780" path="res://Images/icon.png" id="1_61iyo"]
+[ext_resource type="Theme" uid="uid://bq3j14yq6jae4" path="res://Themes/main_theme.tres" id="2_gjdmj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i5fkp"]
+
+[node name="Control" type="Control"]
+material = SubResource("CanvasItemMaterial_i5fkp")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 250.0
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 80.0
+offset_top = -25.0
+offset_right = 400.0
+offset_bottom = 275.0
+texture = ExtResource("1_61iyo")
+expand_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 306.0
+offset_right = 340.0
+offset_bottom = 356.0
+theme = ExtResource("2_gjdmj")
+text = "Bewertung"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 381.0
+offset_right = 340.0
+offset_bottom = 431.0
+theme = ExtResource("2_gjdmj")
+text = "Bewertungsmatrizen"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 456.0
+offset_right = 340.0
+offset_bottom = 506.0
+theme = ExtResource("2_gjdmj")
+text = "Schüler"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 531.0
+offset_right = 340.0
+offset_bottom = 581.0
+theme = ExtResource("2_gjdmj")
+text = "Settings"
