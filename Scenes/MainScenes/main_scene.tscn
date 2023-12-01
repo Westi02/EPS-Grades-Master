@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5pyc5lpynflb"]
+[gd_scene load_steps=5 format=3 uid="uid://b5pyc5lpynflb"]
 
 [ext_resource type="Texture2D" uid="uid://wmacey8ic780" path="res://Images/icon.png" id="1_61iyo"]
+[ext_resource type="Script" path="res://Scripts/MainMenuScript.gd" id="1_nwgh2"]
 [ext_resource type="Theme" uid="uid://bq3j14yq6jae4" path="res://Themes/main_theme.tres" id="2_gjdmj"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i5fkp"]
@@ -13,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_nwgh2")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -29,7 +31,7 @@ offset_bottom = 275.0
 texture = ExtResource("1_61iyo")
 expand_mode = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="BewertungButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 145.0
 offset_top = 306.0
@@ -64,3 +66,5 @@ offset_right = 340.0
 offset_bottom = 581.0
 theme = ExtResource("2_gjdmj")
 text = "Settings"
+
+[connection signal="pressed" from="BewertungButton" to="." method="_on_bewertung_button_pressed"]
