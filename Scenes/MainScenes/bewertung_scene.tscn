@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://o1urr34w8i6g"]
+[gd_scene load_steps=4 format=3 uid="uid://o1urr34w8i6g"]
+
+[ext_resource type="Script" path="res://Scripts/RatingCalculator.gd" id="1_7d7wy"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i5fkp"]
 
@@ -13,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7d7wy")
 
 [node name="ColorRectTeil1" type="ColorRect" parent="."]
 layout_mode = 0
@@ -74,7 +77,6 @@ offset_left = 100.0
 offset_top = -1.0
 offset_right = 182.0
 offset_bottom = 22.0
-text = "100000"
 
 [node name="ColorRectTeil2" type="ColorRect" parent="."]
 layout_mode = 0
@@ -198,7 +200,6 @@ offset_left = 100.0
 offset_top = -1.0
 offset_right = 182.0
 offset_bottom = 22.0
-text = "100000"
 
 [node name="ColorRectProjektarbeit" type="ColorRect" parent="."]
 layout_mode = 0
@@ -292,7 +293,6 @@ offset_left = 100.0
 offset_top = -1.0
 offset_right = 182.0
 offset_bottom = 22.0
-text = "100000"
 
 [node name="ColorRectGesamt" type="ColorRect" parent="."]
 layout_mode = 0
@@ -311,13 +311,10 @@ text = "Gesamtpunkte:
 "
 label_settings = SubResource("LabelSettings_664u0")
 
-[node name="GesamtpunkteLabel" type="Label" parent="ColorRectGesamt"]
-offset_left = 150.0
-offset_top = 5.0
-offset_right = 357.0
-offset_bottom = 41.0
-text = "100000
-"
+[node name="GesamtpunkteLabel" type="Label" parent="ColorRectGesamt/GesamtpunkteTitel"]
+offset_left = 145.0
+offset_right = 352.0
+offset_bottom = 36.0
 label_settings = SubResource("LabelSettings_664u0")
 
 [node name="NoteTitel" type="Label" parent="ColorRectGesamt"]
@@ -329,11 +326,11 @@ text = "Note:
 "
 label_settings = SubResource("LabelSettings_664u0")
 
-[node name="NoteLabel" type="Label" parent="ColorRectGesamt"]
-offset_left = 390.0
-offset_top = 5.0
-offset_right = 597.0
-offset_bottom = 41.0
-text = "100000
-"
+[node name="NoteLabel" type="Label" parent="ColorRectGesamt/NoteTitel"]
+offset_left = 65.0
+offset_right = 272.0
+offset_bottom = 36.0
 label_settings = SubResource("LabelSettings_664u0")
+
+[connection signal="text_changed" from="ColorRectTeil1/PunkteLabel/InputPunkteTeil1" to="." method="_on_input_punkte_teil_1_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil1/FaktorLabel/InputFaktorTeil1" to="." method="_on_input_faktor_teil_1_text_changed"]
