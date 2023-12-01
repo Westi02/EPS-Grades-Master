@@ -15,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="ColorRectTeil1" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 480.0
 offset_bottom = 175.0
 color = Color(0.129412, 0.129412, 0.129412, 1)
@@ -44,6 +45,7 @@ offset_right = 167.063
 offset_bottom = 31.0
 
 [node name="FaktorLabel" type="Label" parent="ColorRectTeil1"]
+layout_mode = 0
 offset_left = 250.0
 offset_top = 60.0
 offset_right = 332.0
@@ -52,11 +54,13 @@ text = "Faktor:
 "
 
 [node name="InputFaktorTeil1" type="LineEdit" parent="ColorRectTeil1/FaktorLabel"]
+layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
 
 [node name="ErgebnisLabelTitel" type="Label" parent="ColorRectTeil1"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 125.0
 offset_right = 112.0
@@ -65,6 +69,7 @@ text = "Ergebnis:
 "
 
 [node name="ErgebnisLabelTeil1" type="Label" parent="ColorRectTeil1/ErgebnisLabelTitel"]
+layout_mode = 0
 offset_left = 100.0
 offset_top = -1.0
 offset_right = 182.0
@@ -72,6 +77,7 @@ offset_bottom = 22.0
 text = "100000"
 
 [node name="ColorRectTeil2" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 175.0
 offset_right = 480.0
 offset_bottom = 400.0
@@ -88,6 +94,7 @@ text = "Abschlussprüfung Teil 2
 label_settings = SubResource("LabelSettings_664u0")
 
 [node name="PunkteLabelP1" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 50.0
 offset_right = 112.0
@@ -102,6 +109,7 @@ offset_right = 167.063
 offset_bottom = 31.0
 
 [node name="FaktorLabelP1" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 250.0
 offset_top = 50.0
 offset_right = 332.0
@@ -110,11 +118,13 @@ text = "Faktor:
 "
 
 [node name="InputFaktorTeil2P1" type="LineEdit" parent="ColorRectTeil2/FaktorLabelP1"]
+layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
 
 [node name="PunkteLabelP2" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 90.0
 offset_right = 112.0
@@ -129,6 +139,7 @@ offset_right = 167.063
 offset_bottom = 31.0
 
 [node name="FaktorLabelP2" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 250.0
 offset_top = 90.0
 offset_right = 332.0
@@ -137,11 +148,13 @@ text = "Faktor:
 "
 
 [node name="InputFaktorTeil2P2" type="LineEdit" parent="ColorRectTeil2/FaktorLabelP2"]
+layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
 
 [node name="PunkteLabelP3" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 130.0
 offset_right = 112.0
@@ -156,6 +169,7 @@ offset_right = 167.063
 offset_bottom = 31.0
 
 [node name="FaktorLabelP3" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 250.0
 offset_top = 130.0
 offset_right = 332.0
@@ -164,11 +178,13 @@ text = "Faktor:
 "
 
 [node name="InputFaktorTeil2P3" type="LineEdit" parent="ColorRectTeil2/FaktorLabelP3"]
+layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
 
 [node name="ErgebnisLabelTitel" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 175.0
 offset_right = 112.0
@@ -177,6 +193,7 @@ text = "Ergebnis:
 "
 
 [node name="ErgebnisLabelTeil2" type="Label" parent="ColorRectTeil2/ErgebnisLabelTitel"]
+layout_mode = 0
 offset_left = 100.0
 offset_top = -1.0
 offset_right = 182.0
@@ -184,12 +201,14 @@ offset_bottom = 22.0
 text = "100000"
 
 [node name="ColorRectProjektarbeit" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 400.0
 offset_right = 480.0
 offset_bottom = 600.0
 color = Color(0.129412, 0.129412, 0.129412, 1)
 
 [node name="TitelLabel" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 5.0
 offset_right = 212.0
@@ -199,6 +218,7 @@ text = "Projektarbeit
 label_settings = SubResource("LabelSettings_664u0")
 
 [node name="PunkteLabelDoku" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 50.0
 offset_right = 112.0
@@ -213,6 +233,7 @@ offset_right = 167.063
 offset_bottom = 31.0
 
 [node name="FaktorLabelDoku" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
 offset_left = 250.0
 offset_top = 50.0
 offset_right = 332.0
@@ -221,11 +242,13 @@ text = "Faktor:
 "
 
 [node name="InputFaktorDoku" type="LineEdit" parent="ColorRectProjektarbeit/FaktorLabelDoku"]
+layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
 
 [node name="PunkteLabelPraesentation" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 90.0
 offset_right = 112.0
@@ -240,6 +263,7 @@ offset_right = 167.063
 offset_bottom = 31.0
 
 [node name="FaktorLabelPraesentation" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
 offset_left = 250.0
 offset_top = 90.0
 offset_right = 332.0
@@ -248,11 +272,13 @@ text = "Faktor:
 "
 
 [node name="InputFaktorTeil2P2" type="LineEdit" parent="ColorRectProjektarbeit/FaktorLabelPraesentation"]
+layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
 
 [node name="ErgebnisLabelTitel" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 150.0
 offset_right = 112.0
@@ -261,6 +287,7 @@ text = "Ergebnis:
 "
 
 [node name="ErgebnisLabelProjektarbeit" type="Label" parent="ColorRectProjektarbeit/ErgebnisLabelTitel"]
+layout_mode = 0
 offset_left = 100.0
 offset_top = -1.0
 offset_right = 182.0
@@ -268,16 +295,45 @@ offset_bottom = 22.0
 text = "100000"
 
 [node name="ColorRectGesamt" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 600.0
 offset_right = 480.0
 offset_bottom = 640.0
 color = Color(0.121569, 0.32549, 0.560784, 1)
 
-[node name="TitelLabel" type="Label" parent="ColorRectGesamt"]
+[node name="GesamtpunkteTitel" type="Label" parent="ColorRectGesamt"]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 5.0
 offset_right = 212.0
 offset_bottom = 41.0
 text = "Gesamtpunkte:
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="GesamtpunkteLabel" type="Label" parent="ColorRectGesamt"]
+offset_left = 150.0
+offset_top = 5.0
+offset_right = 357.0
+offset_bottom = 41.0
+text = "100000
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="NoteTitel" type="Label" parent="ColorRectGesamt"]
+offset_left = 325.0
+offset_top = 5.0
+offset_right = 532.0
+offset_bottom = 41.0
+text = "Note:
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="NoteLabel" type="Label" parent="ColorRectGesamt"]
+offset_left = 390.0
+offset_top = 5.0
+offset_right = 597.0
+offset_bottom = 41.0
+text = "100000
 "
 label_settings = SubResource("LabelSettings_664u0")
