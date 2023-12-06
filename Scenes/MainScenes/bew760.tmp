@@ -272,7 +272,7 @@ offset_bottom = 113.0
 text = "Faktor:
 "
 
-[node name="InputFaktorPraesentation" type="LineEdit" parent="ColorRectProjektarbeit/FaktorLabelPraesentation"]
+[node name="InputFaktorTeil2P2" type="LineEdit" parent="ColorRectProjektarbeit/FaktorLabelPraesentation"]
 layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
@@ -343,7 +343,3 @@ label_settings = SubResource("LabelSettings_664u0")
 [connection signal="text_changed" from="ColorRectTeil2/FaktorLabelP2/InputFaktorTeil2P2" to="." method="_on_input_faktor_teil_2p_2_text_changed"]
 [connection signal="text_changed" from="ColorRectTeil2/PunkteLabelP3/InputPunkteTeil2P3" to="." method="_on_input_punkte_teil_2p_3_text_changed"]
 [connection signal="text_changed" from="ColorRectTeil2/FaktorLabelP3/InputFaktorTeil2P3" to="." method="_on_input_faktor_teil_2p_3_text_changed"]
-[connection signal="text_changed" from="ColorRectProjektarbeit/PunkteLabelDoku/InputPunkteDoku" to="." method="_on_input_punkte_doku_text_changed"]
-[connection signal="text_changed" from="ColorRectProjektarbeit/FaktorLabelDoku/InputFaktorDoku" to="." method="_on_input_faktor_doku_text_changed"]
-[connection signal="text_changed" from="ColorRectProjektarbeit/PunkteLabelPraesentation/InputPunktePraesentation" to="." method="_on_input_punkte_praesentation_text_changed"]
-[connection signal="text_changed" from="ColorRectProjektarbeit/FaktorLabelPraesentation/InputFaktorPraesentation" to="." method="_on_input_faktor_praesentation_text_changed"]
