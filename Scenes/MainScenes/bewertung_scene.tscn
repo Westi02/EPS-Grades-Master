@@ -1,0 +1,349 @@
+[gd_scene load_steps=4 format=3 uid="uid://o1urr34w8i6g"]
+
+[ext_resource type="Script" path="res://Scripts/RatingCalculator.gd" id="1_7d7wy"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i5fkp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_664u0"]
+font_size = 18
+
+[node name="Control" type="Control"]
+material = SubResource("CanvasItemMaterial_i5fkp")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7d7wy")
+
+[node name="ColorRectTeil1" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 175.0
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="TitelLabel" type="Label" parent="ColorRectTeil1"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 212.0
+offset_bottom = 41.0
+text = "Abschlussprüfung Teil 1"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="PunkteLabel" type="Label" parent="ColorRectTeil1"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 60.0
+offset_right = 112.0
+offset_bottom = 83.0
+text = "Punktzahl:
+"
+
+[node name="InputPunkteTeil1" type="LineEdit" parent="ColorRectTeil1/PunkteLabel"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 167.063
+offset_bottom = 31.0
+
+[node name="FaktorLabel" type="Label" parent="ColorRectTeil1"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 60.0
+offset_right = 332.0
+offset_bottom = 83.0
+text = "Faktor:
+"
+
+[node name="InputFaktorTeil1" type="LineEdit" parent="ColorRectTeil1/FaktorLabel"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 142.063
+offset_bottom = 31.0
+
+[node name="ErgebnisLabelTitel" type="Label" parent="ColorRectTeil1"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 125.0
+offset_right = 112.0
+offset_bottom = 148.0
+text = "Ergebnis:
+"
+
+[node name="ErgebnisLabelTeil1" type="Label" parent="ColorRectTeil1/ErgebnisLabelTitel"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = -1.0
+offset_right = 182.0
+offset_bottom = 22.0
+
+[node name="ColorRectTeil2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 175.0
+offset_right = 480.0
+offset_bottom = 400.0
+color = Color(0, 0, 0, 1)
+
+[node name="TitelLabel" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 212.0
+offset_bottom = 41.0
+text = "Abschlussprüfung Teil 2
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="PunkteLabelP1" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 50.0
+offset_right = 112.0
+offset_bottom = 73.0
+text = "Punktzahl:
+"
+
+[node name="InputPunkteTeil2P1" type="LineEdit" parent="ColorRectTeil2/PunkteLabelP1"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 167.063
+offset_bottom = 31.0
+
+[node name="FaktorLabelP1" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 50.0
+offset_right = 332.0
+offset_bottom = 73.0
+text = "Faktor:
+"
+
+[node name="InputFaktorTeil2P1" type="LineEdit" parent="ColorRectTeil2/FaktorLabelP1"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 142.063
+offset_bottom = 31.0
+
+[node name="PunkteLabelP2" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 90.0
+offset_right = 112.0
+offset_bottom = 113.0
+text = "Punktzahl:
+"
+
+[node name="InputPunkteTeil2P2" type="LineEdit" parent="ColorRectTeil2/PunkteLabelP2"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 167.063
+offset_bottom = 31.0
+
+[node name="FaktorLabelP2" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 90.0
+offset_right = 332.0
+offset_bottom = 113.0
+text = "Faktor:
+"
+
+[node name="InputFaktorTeil2P2" type="LineEdit" parent="ColorRectTeil2/FaktorLabelP2"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 142.063
+offset_bottom = 31.0
+
+[node name="PunkteLabelP3" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 130.0
+offset_right = 112.0
+offset_bottom = 153.0
+text = "Punktzahl:
+"
+
+[node name="InputPunkteTeil2P3" type="LineEdit" parent="ColorRectTeil2/PunkteLabelP3"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 167.063
+offset_bottom = 31.0
+
+[node name="FaktorLabelP3" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 130.0
+offset_right = 332.0
+offset_bottom = 153.0
+text = "Faktor:
+"
+
+[node name="InputFaktorTeil2P3" type="LineEdit" parent="ColorRectTeil2/FaktorLabelP3"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 142.063
+offset_bottom = 31.0
+
+[node name="ErgebnisLabelTitel" type="Label" parent="ColorRectTeil2"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 175.0
+offset_right = 112.0
+offset_bottom = 198.0
+text = "Ergebnis:
+"
+
+[node name="ErgebnisLabelTeil2" type="Label" parent="ColorRectTeil2/ErgebnisLabelTitel"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = -1.0
+offset_right = 182.0
+offset_bottom = 22.0
+
+[node name="ColorRectProjektarbeit" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 400.0
+offset_right = 480.0
+offset_bottom = 600.0
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="TitelLabel" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 212.0
+offset_bottom = 41.0
+text = "Projektarbeit
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="PunkteLabelDoku" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 50.0
+offset_right = 112.0
+offset_bottom = 73.0
+text = "Punktzahl:
+"
+
+[node name="InputPunkteDoku" type="LineEdit" parent="ColorRectProjektarbeit/PunkteLabelDoku"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 167.063
+offset_bottom = 31.0
+
+[node name="FaktorLabelDoku" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 50.0
+offset_right = 332.0
+offset_bottom = 73.0
+text = "Faktor:
+"
+
+[node name="InputFaktorDoku" type="LineEdit" parent="ColorRectProjektarbeit/FaktorLabelDoku"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 142.063
+offset_bottom = 31.0
+
+[node name="PunkteLabelPraesentation" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 90.0
+offset_right = 112.0
+offset_bottom = 113.0
+text = "Punktzahl:
+"
+
+[node name="InputPunktePraesentation" type="LineEdit" parent="ColorRectProjektarbeit/PunkteLabelPraesentation"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 167.063
+offset_bottom = 31.0
+
+[node name="FaktorLabelPraesentation" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 90.0
+offset_right = 332.0
+offset_bottom = 113.0
+text = "Faktor:
+"
+
+[node name="InputFaktorPraesentation" type="LineEdit" parent="ColorRectProjektarbeit/FaktorLabelPraesentation"]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 142.063
+offset_bottom = 31.0
+
+[node name="ErgebnisLabelTitel" type="Label" parent="ColorRectProjektarbeit"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 150.0
+offset_right = 112.0
+offset_bottom = 173.0
+text = "Ergebnis:
+"
+
+[node name="ErgebnisLabelProjektarbeit" type="Label" parent="ColorRectProjektarbeit/ErgebnisLabelTitel"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = -1.0
+offset_right = 182.0
+offset_bottom = 22.0
+
+[node name="ColorRectGesamt" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 600.0
+offset_right = 480.0
+offset_bottom = 640.0
+color = Color(0.121569, 0.32549, 0.560784, 1)
+
+[node name="GesamtpunkteTitel" type="Label" parent="ColorRectGesamt"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 212.0
+offset_bottom = 41.0
+text = "Gesamtpunkte:
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="GesamtpunkteLabel" type="Label" parent="ColorRectGesamt/GesamtpunkteTitel"]
+layout_mode = 0
+offset_left = 145.0
+offset_right = 352.0
+offset_bottom = 36.0
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="NoteTitel" type="Label" parent="ColorRectGesamt"]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 5.0
+offset_right = 532.0
+offset_bottom = 41.0
+text = "Note:
+"
+label_settings = SubResource("LabelSettings_664u0")
+
+[node name="NoteLabel" type="Label" parent="ColorRectGesamt/NoteTitel"]
+layout_mode = 0
+offset_left = 65.0
+offset_right = 272.0
+offset_bottom = 36.0
+label_settings = SubResource("LabelSettings_664u0")
+
+[connection signal="text_changed" from="ColorRectTeil1/PunkteLabel/InputPunkteTeil1" to="." method="_on_input_punkte_teil_1_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil1/FaktorLabel/InputFaktorTeil1" to="." method="_on_input_faktor_teil_1_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil2/PunkteLabelP1/InputPunkteTeil2P1" to="." method="_on_input_punkte_teil_2p_1_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil2/FaktorLabelP1/InputFaktorTeil2P1" to="." method="_on_input_faktor_teil_2p_1_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil2/PunkteLabelP2/InputPunkteTeil2P2" to="." method="_on_input_punkte_teil_2p_2_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil2/FaktorLabelP2/InputFaktorTeil2P2" to="." method="_on_input_faktor_teil_2p_2_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil2/PunkteLabelP3/InputPunkteTeil2P3" to="." method="_on_input_punkte_teil_2p_3_text_changed"]
+[connection signal="text_changed" from="ColorRectTeil2/FaktorLabelP3/InputFaktorTeil2P3" to="." method="_on_input_faktor_teil_2p_3_text_changed"]
+[connection signal="text_changed" from="ColorRectProjektarbeit/PunkteLabelDoku/InputPunkteDoku" to="." method="_on_input_punkte_doku_text_changed"]
+[connection signal="text_changed" from="ColorRectProjektarbeit/FaktorLabelDoku/InputFaktorDoku" to="." method="_on_input_faktor_doku_text_changed"]
+[connection signal="text_changed" from="ColorRectProjektarbeit/PunkteLabelPraesentation/InputPunktePraesentation" to="." method="_on_input_punkte_praesentation_text_changed"]
+[connection signal="text_changed" from="ColorRectProjektarbeit/FaktorLabelPraesentation/InputFaktorPraesentation" to="." method="_on_input_faktor_praesentation_text_changed"]
