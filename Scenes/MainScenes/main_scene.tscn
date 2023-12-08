@@ -40,30 +40,21 @@ offset_bottom = 356.0
 theme = ExtResource("2_gjdmj")
 text = "Bewertung"
 
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 145.0
-offset_top = 381.0
-offset_right = 340.0
-offset_bottom = 431.0
-theme = ExtResource("2_gjdmj")
-text = "Bewertungsmatrizen"
-
 [node name="Button3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 145.0
-offset_top = 456.0
-offset_right = 340.0
-offset_bottom = 506.0
+offset_left = 148.0
+offset_top = 376.0
+offset_right = 343.0
+offset_bottom = 426.0
 theme = ExtResource("2_gjdmj")
 text = "Schüler"
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 0
-offset_left = 145.0
-offset_top = 531.0
-offset_right = 340.0
-offset_bottom = 581.0
+offset_left = 148.0
+offset_top = 451.0
+offset_right = 343.0
+offset_bottom = 501.0
 theme = ExtResource("2_gjdmj")
 text = "Settings"
 

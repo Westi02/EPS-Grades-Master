@@ -29,6 +29,7 @@ func _calculate_rating_teil1():
 	$ColorRectTeil1/ErgebnisLabelTitel/ErgebnisLabelTeil1.text = str(result)
 	_calculate_rating_gesamt()
 	
+	
 func _calculate_rating_teil2():
 	var pointsP1 = $ColorRectTeil2/PunkteLabelP1/InputPunkteTeil2P1.text
 	var factorP1 = $ColorRectTeil2/FaktorLabelP1/InputFaktorTeil2P1.text
@@ -124,23 +125,48 @@ func _calculate_rating_gesamt():
 	var result = int(round((pointsTeil1 + pointsTeil2 + pointsTeil3) / 100))
 	$ColorRectGesamt/GesamtpunkteTitel/GesamtpunkteLabel.text = str(result)	
 	$ColorRectGesamt/NoteTitel/NoteLabel.text = str(_calculate_note_gesamt(result))	
+	_calculate_passed()
+	
+func _calculate_passed():
+	var p1 = $ColorRectTeil1/PunkteLabel/InputPunkteTeil1.text
+	var p2 = $ColorRectTeil2/PunkteLabelP1/InputPunkteTeil2P1.text
+	var p3 = $ColorRectTeil2/PunkteLabelP2/InputPunkteTeil2P2.text
+	var p4 = $ColorRectTeil2/PunkteLabelP3/InputPunkteTeil2P3.text
+	var p5 = $ColorRectProjektarbeit/PunkteLabelDoku/InputPunkteDoku.text
+	var p6 = $ColorRectProjektarbeit/PunkteLabelPraesentation/InputPunktePraesentation.text
+	
+	for value in [p1, p2, p3, p4, p5, p6]:
+		if value.is_valid_int():
+			value = value.to_int()
+			if value < 30:
+				pass
+				$ColorRectGesamt/NoteTitel/NoteLabel.text = "Nicht bestanden"
+				$ColorRectGesamt.color = Color.RED
 	
 func _calculate_note_gesamt(punkte):
 	if punkte >= 92:
+		$ColorRectGesamt.color = Color.DARK_GREEN
 		return 1
 	elif punkte >= 81:
+		$ColorRectGesamt.color = Color.DARK_GREEN
 		return 2
 	elif  punkte >= 67:
+		$ColorRectGesamt.color = Color.DARK_GREEN
 		return 3
 	elif punkte >= 50:
+		$ColorRectGesamt.color = Color.DARK_GREEN
 		return 4
 	elif punkte >= 30:
+		$ColorRectGesamt.color = Color.RED
 		return 5
 	elif punkte >= 0:
+		$ColorRectGesamt.color = Color.RED
 		return 6
 	else:
 		return "ERROR"
 	
+	
+		
 func _calculatePointsFactorResult(points, factor):
 	return points * factor
 

@@ -61,6 +61,7 @@ layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
+text = "20"
 
 [node name="ErgebnisLabelTitel" type="Label" parent="ColorRectTeil1"]
 layout_mode = 0
@@ -124,6 +125,7 @@ layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
+text = "10"
 
 [node name="PunkteLabelP2" type="Label" parent="ColorRectTeil2"]
 layout_mode = 0
@@ -154,6 +156,7 @@ layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
+text = "10"
 
 [node name="PunkteLabelP3" type="Label" parent="ColorRectTeil2"]
 layout_mode = 0
@@ -184,6 +187,7 @@ layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
+text = "10"
 
 [node name="ErgebnisLabelTitel" type="Label" parent="ColorRectTeil2"]
 layout_mode = 0
@@ -247,6 +251,7 @@ layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
+text = "25"
 
 [node name="PunkteLabelPraesentation" type="Label" parent="ColorRectProjektarbeit"]
 layout_mode = 0
@@ -277,6 +282,7 @@ layout_mode = 0
 offset_left = 75.0
 offset_right = 142.063
 offset_bottom = 31.0
+text = "25"
 
 [node name="ErgebnisLabelTitel" type="Label" parent="ColorRectProjektarbeit"]
 layout_mode = 0
@@ -320,9 +326,9 @@ label_settings = SubResource("LabelSettings_664u0")
 
 [node name="NoteTitel" type="Label" parent="ColorRectGesamt"]
 layout_mode = 0
-offset_left = 325.0
+offset_left = 255.0
 offset_top = 5.0
-offset_right = 532.0
+offset_right = 462.0
 offset_bottom = 41.0
 text = "Note:
 "
