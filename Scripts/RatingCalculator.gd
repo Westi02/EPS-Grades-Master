@@ -135,13 +135,18 @@ func _calculate_passed():
 	var p5 = $ColorRectProjektarbeit/PunkteLabelDoku/InputPunkteDoku.text
 	var p6 = $ColorRectProjektarbeit/PunkteLabelPraesentation/InputPunktePraesentation.text
 	
+	var fiveCounter = 0
 	for value in [p1, p2, p3, p4, p5, p6]:
 		if value.is_valid_int():
 			value = value.to_int()
+			if value < 50:
+				fiveCounter += 1
 			if value < 30:
-				pass
 				$ColorRectGesamt/NoteTitel/NoteLabel.text = "Nicht bestanden"
 				$ColorRectGesamt.color = Color.RED
+		if fiveCounter >= 2:
+			$ColorRectGesamt/NoteTitel/NoteLabel.text = "Nicht bestanden"
+			$ColorRectGesamt.color = Color.RED
 	
 func _calculate_note_gesamt(punkte):
 	if punkte >= 92:
